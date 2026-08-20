@@ -95,7 +95,7 @@ services:
       timeout: 5s
       retries: 10
 
-  n8n:
+  automation.operations.callistosystems.online:
     <<: *service-n8n
     hostname: n8n
     container_name: n8n
@@ -117,13 +117,13 @@ services:
       
     environment:
       
-      WEBHOOK_URL: https://automation.valorantdigital.online/
+      WEBHOOK_URL: https://automation.operations.callistosystems.online/
       
       VIRTUAL_PORT: 5678
       
-      VIRTUAL_HOST: automation.valorantdigital.online
+      VIRTUAL_HOST: automation.operations.callistosystems.online
       
-      LETSENCRYPT_HOST: automation.valorantdigital.online        
+      LETSENCRYPT_HOST: automation.operations.callistosystems.online
       
       N8N_DIAGNOSTICS_ENABLED: false
       
