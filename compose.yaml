@@ -14,7 +14,6 @@ x-n8n: &service-n8n
     - N8N_SECURE_COOKIE=false
     - N8N_ENCRYPTION_KEY
     - N8N_USER_MANAGEMENT_JWT_SECRET
-    - OLLAMA_HOST=${OLLAMA_HOST:-ollama:11434}
   env_file:
     - path: .env
       required: true
@@ -111,8 +110,7 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-      n8n-import:
-        condition: service_completed_successfully
+     
     expose:
     
       - 5678
