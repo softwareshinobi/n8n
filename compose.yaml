@@ -72,7 +72,7 @@ services:
 
     environment:
 
-      DEFAULT_EMAIL: troy@softwareshinobi.com
+      DEFAULT_EMAIL: troy@callistosystems.online
    
    ####################################
    ###
@@ -117,13 +117,13 @@ services:
       
     environment:
       
-      WEBHOOK_URL: https://automation.embanet.online/
+      WEBHOOK_URL: https://automation.valorantdigital.online/
       
       VIRTUAL_PORT: 5678
       
-      VIRTUAL_HOST: automation.embanet.online
+      VIRTUAL_HOST: automation.valorantdigital.online
       
-      LETSENCRYPT_HOST: automation.embanet.online        
+      LETSENCRYPT_HOST: automation.valorantdigital.online        
       
       N8N_DIAGNOSTICS_ENABLED: false
       
